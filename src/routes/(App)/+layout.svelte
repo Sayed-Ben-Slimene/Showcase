@@ -5,16 +5,16 @@
 <div class="page">
 	<header class="navbar navbar-expand-sm navbar-dark" >
 		<div class="container-xl">
-		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="navbar-toggler-icon"></span>
-		  </button>
-		  <h1 class="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3">
-		    <a href=".">
-			<img src="./src/image/logo.png" width="240" height="35" alt="Showcase"  />
-		</a>
-		  </h1>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<h1 class="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3">
+				<a href="." class="navbar-brand navbar-brand-autodark">
+					<img src="./src/image/logo-no-background.svg" width="250" height="40" alt="Showcase"  />
+				</a>
+			</h1>
 		  <div class="navbar-nav flex-row order-md-last">
-			<div class="nav-item d-none d-md-flex me-3">
+			<div class="nav-item d-none d-md-flex me-2">
 			  <div class="btn-list">
 			    <a href="https://github.com/tabler/tabler" class="btn" target="_blank" rel="noreferrer">
 				 <!-- Download SVG icon from http://tabler-icons.io/i/brand-github -->
@@ -144,7 +144,6 @@
 		   </div>
 		</div>
 	   </header>
-
    <div class="page-wrapper">
 		
 	<slot/>

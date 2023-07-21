@@ -1,5 +1,6 @@
 <script>
   export let form
+
 </script>
   <div class="page page-center">
     
@@ -48,7 +49,8 @@
               </label>
             </div>
             <div class="form-footer">
-              <button type="submit" class="btn btn-primary w-100">Sign in</button>
+          <button type="submit" class="btn btn-primary w-100">Sign in</button> 
+          
             </div>
           </form>
         </div>

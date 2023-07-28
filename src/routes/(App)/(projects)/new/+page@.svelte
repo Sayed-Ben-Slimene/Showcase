@@ -1,7 +1,11 @@
 <script>
   export let form
+	/** @type {import('./$types.js').LayoutData} */
+
+
 </script>
-    <div class="page page-center">
+
+ 
       <div class="container container-tight py-4">
 
         
@@ -58,7 +62,7 @@
 
               <div class="mb-3">
                 <div class="form-label">Thumbnail</div>
-                <input type="file"id="thumnail" name ="thumnail" class="form-control" />
+                <input type="file"id="thumbnail" name ="thumbnail" class="form-control" />
               </div>
 
 
@@ -71,7 +75,7 @@
         </div>
 
       </div>
-    </div>
+  
     <!-- Libs JS -->
     <!-- Tabler Core -->
   

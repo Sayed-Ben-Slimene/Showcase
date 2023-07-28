@@ -16,9 +16,12 @@
 		"@playwright/test": "^1.28.1",
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/kit": "^1.20.4",
+		"@types/mailgun-js": "^0.22.13",
+		"@types/nodemailer": "^6.4.9",
 		"@typescript-eslint/eslint-plugin": "^5.45.0",
 		"@typescript-eslint/parser": "^5.45.0",
 		"autoprefixer": "^10.4.14",
+		"daisyui": "^3.3.1",
 		"eslint": "^8.28.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-svelte": "^2.30.0",
@@ -36,6 +39,8 @@
 	"type": "module",
 	"dependencies": {
 		"@tabler/core": "^1.0.0-beta19",
+		"mailgun-js": "^0.22.0",
+		"nodemailer": "^6.9.4",
 		"pocketbase": "^0.15.3"
 	}
 }

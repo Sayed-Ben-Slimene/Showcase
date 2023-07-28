@@ -1,7 +1,10 @@
 <script>
   export let form
+	// import '../../app.css';
 
 </script>
+
+
   <div class="page page-center">
     
     <div class="container container-tight py-4">
@@ -30,7 +33,7 @@
               <label class="form-label">
                 Password
                 <span class="form-label-description">
-                  <a href="./forgot-password.html">I forgot password</a>
+                  <a href="\resetPassword">I forgot password</a>
                 </span>
               </label>
 

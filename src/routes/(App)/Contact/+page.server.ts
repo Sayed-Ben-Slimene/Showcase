@@ -23,12 +23,12 @@ export const actions = {
         to: [data.email],
         cc: 'sayedbenslimane@gmail.com',
         subject: 'Email With Attachments Testing',
-        html: `<h1 style="color: Aqua">Welcome To OctaCoder</h1> <p>Please Subscribe OctaCoder Youtube Channel</p>
+        html: `<h1 style="color: Aqua">Welcome To SHOWCASE </h1>
           <h4 style="color: red">"Learn The Way, Create Your Own Way"</h4>
-          <a href="https://www.youtube.com/@octacoder">SubScribe OctaCoder</a>`,
+          ${data.message}`,
         attachments: [
           {
-            filename: 'logo-Showcase',
+            filename: 'logo-Showcase.png',
             path: './src/image/showcase-low-resolution-logo-color-on-transparent-background.png'
           }
           

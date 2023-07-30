@@ -1,10 +1,18 @@
 <script>
+  export let data;
   export let form
 	// import '../../../app.css';
 
 </script>
 
 <style>
+.page-centerr {
+    /* Use Flexbox to center the div */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Set the height of the container to the viewport height */
+  }
 
 button {
               font-family: inherit;
@@ -42,7 +50,7 @@ button {
             }
             
             button:hover span {
-              transform: translateX(15em);
+              transform: translateX(30em);
             }
             
             button:active {
@@ -58,14 +66,116 @@ button {
                 transform: translateY(-0.1em);
               }
             }
+            .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
             
 
 </style>
-  <div class="page page-center">
-    
-    <div class="container container-tight py-4">
 
-      <div class="card card-md">
+    
+      <div class="page page-centerr">
+      <div class="container container py-4">
+
+
+  
+    
+    <div class="col-lg-12">
+      <div class="row row-cards">
+        <div class="col-12">
+          <form class="card" action="?/sendMail" method="POST">
+            <div class="card-body">
+              <h1 class="h1 text-center mb-2 " >Contact Us </h1>
+              <h3 class="h2 text-center mb-4">Have questions about service, please contact us.</h3>
+    
+              <div class="row row-cards">
+  
+                <div class="col-sm-6 col-md-6">
+                  <div class="mb-3">
+                    <label class="form-label">Company</label>
+                    <input type="text" name="company" id="company" class="form-control" placeholder="Company Name ">
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6">
+                  <div class="mb-3">
+                    <label class="form-label">Email address</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Destination Email">
+                  </div>
+                </div>
+
+
+                <div class="col-sm-6 col-md-6">
+                  <div class="mb-3">             
+                    <label class="form-label">Message</label>
+                    <!-- <textarea rows="5" class="form-control" placeholder="Here can be your description">  </textarea> -->
+                    <textarea class="form-control" id="message" name ="message" data-bs-toggle="autosize" placeholder="Type something…"></textarea>
+      
+                  </div>
+                </div>
+
+
+                <div class="col-sm-6 col-md-6">
+                  <div class="mb-3">
+                    <label class="form-label">Address</label>
+                    <input type="text" class="form-control" id="address" name ="address" placeholder="Company Address" >
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <div class="mb-3">
+                    <label class="form-label">City</label>
+                    <input type="text" class="form-control" id="city" name ="city" placeholder="City ">
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                  <div class="mb-3">
+                    <label class="form-label">Postal Code</label>
+                    <input type="test" id="code" name ="code" class="form-control" placeholder="ZIP Code">
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <div class="mb-3">
+                    <label class="form-label">Country</label>
+                    <select class="form-control form-select" id="country" name ="country" >
+                      <option id ="country">Germany</option>
+                      <option id ="country" >Tunisia</option>
+                      <option id ="country">French</option>
+                      <option id ="country">Spain</option>
+                    </select>
+                  </div>
+                </div>
+
+                
+              </div>
+<br>
+              <div class="button-container">
+                    <button type="submit" class="btn btn-primary w-50">
+                        <div class="svg-wrapper-1">
+                        <div class="svg-wrapper">
+                          <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z" fill="currentColor"></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <span>Send Email</span>
+          
+                    </button> 
+               </div>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- Libs JS -->
+  <!-- Tabler Core -->
+      <!-- <div class="card card-md">
         <div class="card-body">
           <h1 class="h2 text-center mb-4 " >Contact Us </h1>
           <h3 class="h2 text-center mb-3">Have questions about service, please contact us.</h3>
@@ -82,10 +192,10 @@ button {
                         <input type="text" class="form-control form-control-rounded mb-2" name="email" placeholder="Enter your email..."/>
               </div>
 
+              
               <div class="mb-3">
                 
                 <label class="form-label">Message</label>
-                <!-- <textarea rows="5" class="form-control" placeholder="Here can be your description">  </textarea> -->
                 <textarea class="form-control" id="message" name ="message" data-bs-toggle="autosize" placeholder="Type something…"></textarea>
   
               </div>
@@ -114,10 +224,5 @@ button {
           </form>
         </div>
 
-      </div>
+      </div> -->
 
-      
-    </div>
-  </div>
-  <!-- Libs JS -->
-  <!-- Tabler Core -->

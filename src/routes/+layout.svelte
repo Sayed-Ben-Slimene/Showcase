@@ -1,7 +1,7 @@
 <script>
 	export let data;
 	// import '../../app.css';
-
+	import { getImageURL } from '$lib/utils';
 
 
 </script>
@@ -128,7 +128,20 @@
 		    <div class="nav-item dropdown">
 			 <a href="#" class="nav-link d-flex lh-1 text-reset p-0" data-bs-toggle="dropdown" aria-label="Open user menu">
 			   {#if data.user?.avatar}
-				<span class="avatar avatar-sm" style="background-image: url({data.user?.avatar})"></span>
+
+			   <div class="avatar avatar-sm">
+				<div class="w-20 rounded">
+				  <img
+				    src={data.user?.avatar
+					 ? getImageURL(data.user.collectionId, data.user.id, data.user.avatar, '80x80')
+					 : `https://via.placeholder.com/80/4506CB/FFFFFF/?text=${data.user.name}`}
+				    alt="User Avatar"
+				  />
+				</div>
+			   </div>
+
+
+				<!-- <span class="avatar avatar-sm" style="background-image: url({data.user?.avatar})"></span> -->
 			   {:else}
 				<!-- If the 'avatar' property is not available, you can show a default avatar or a placeholder -->
 				<span class="avatar avatar-sm" style="background-color: #ddd;"></span>
@@ -139,9 +152,13 @@
 				<div class="mt-1 small text-muted">{data.user.email}</div>
 			   </div>
 			 </a>
+
+
+
+			 
 			 <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
 			   <a href="#" class="dropdown-item">Status</a>
-			   <a href="./profile.html" class="dropdown-item">Profile</a>
+			   <a href="./profile" class="dropdown-item">Profile</a>
 			   <a href="./listOfProjects" class="dropdown-item">My Projects</a>
 			   <div class="dropdown-divider"></div>
 			   <a href="./settings" class="dropdown-item">Settings</a>

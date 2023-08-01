@@ -11,6 +11,13 @@ export const actions = {
         throw new Error("User data not available or missing user ID.");
       }
 
+      const thumb = data.get('thumbnail');
+
+      if (thumb.size === 0) {
+        data.delete('thumbnail');
+      }
+
+
       data.append('user', locals.user.id);
 
       // Assuming you have the 'pb' instance correctly set up in 'locals'

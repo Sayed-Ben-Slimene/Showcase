@@ -1,6 +1,25 @@
 <script>
     export let form
 </script>
+
+<style>
+
+  .input {
+   color: #000000;
+   border: 2px solid rgba(0, 0, 0, 0.417);
+   border-radius: 10px;
+   background: transparent;
+  
+  
+  }
+  
+  .input:active {
+   box-shadow: 2px 2px 15px #4169e1 inset;
+  }
+  
+  
+  </style>
+
 <div class="page page-center">
     
     <div class="container container-tight py-2">
@@ -17,7 +36,7 @@
           <p class="text-muted mb-4">Enter your email address and your password will be reset and emailed to you.</p>
           <div class="mb-3">
             <label class="form-label">Email address</label>
-            <input type="email" name="email" class="form-control" placeholder="Enter email">
+            <input type="email" name="email" class="input form-control" placeholder="Enter email">
           </div>
 
           <div class="form-footer">

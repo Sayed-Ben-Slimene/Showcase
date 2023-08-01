@@ -4,7 +4,23 @@
 
 </script>
 
+<style>
 
+  .input {
+   color: #000000;
+   border: 2px solid rgba(0, 0, 0, 0.417);
+   border-radius: 10px;
+   background: transparent;
+  
+  
+  }
+  
+  .input:active {
+   box-shadow: 2px 2px 15px #4169e1 inset;
+  }
+  
+  
+  </style>
   <div class="page page-center">
     
     <div class="container container-tight py-4">
@@ -25,7 +41,7 @@
                 <span class="input-icon-addon">
                   <i class="ti ti-brand-gmail"></i>
                 </span>
-                      <input type="text" class="form-control form-control-rounded mb-2" name="email" placeholder="Enter your email..."/>
+                      <input type="text" class="input form-control form-control-rounded mb-2" name="email" placeholder="Enter your email..."/>
               </div>
 
             </div>
@@ -36,12 +52,12 @@
                   <a href="\resetPassword">I forgot password</a>
                 </span>
               </label>
-
+            
               <div class="input-icon">
                 <span class="input-icon-addon">
                   <i class="ti ti-circle-key"></i>
                 </span>
-              <input type="password" class="form-control form-control-rounded mb-2" name="password"  placeholder="Enter your Password..."/>
+              <input type="password" class="input form-control form-control-rounded mb-2" name="password"  placeholder="Enter your Password..."/>
               
               </div>
             </div>

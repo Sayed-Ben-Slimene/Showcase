@@ -5,6 +5,24 @@
 
 </script>
 
+
+<style>
+
+.input {
+ color: #000000;
+ border: 2px solid rgba(0, 0, 0, 0.417);
+ border-radius: 10px;
+ background: transparent;
+
+
+}
+
+.input:active {
+ box-shadow: 2px 2px 15px #4169e1 inset;
+}
+
+
+</style>
  
       <div class="container container-tight py-4">
 
@@ -26,7 +44,7 @@
                   <span class="input-icon-addon">
                     <i class="ti ti-circle-filled"></i>
                   </span>
-                        <input type="Text" id="name" name="name" class="form-control form-control mb-2" placeholder="Enter your Project name..."/>
+                        <input type="Text" id="name" name="name" class="input form-control form-control mb-2" placeholder="Enter your Project name..."/>
                 </div>
               </div>
               <div class="mb-1">
@@ -35,7 +53,7 @@
                     <span class="input-icon-addon">
                       <i class="ti ti-circle-filled"></i>
                     </span>
-                  <input type="Text" id="tagline" name="tagline" class="form-control form-control mb-2"   placeholder="Enter your Project tagline..."/>
+                  <input type="Text" id="tagline" name="tagline" class="input form-control form-control mb-2"   placeholder="Enter your Project tagline..."/>
                 </div>
               </div>
 
@@ -46,7 +64,7 @@
                   <span class="input-icon-addon">
                     <i class="ti ti-brand-gmail"></i>
                   </span>
-                        <input type="text" id="url" name ="url" class="form-control form-control-rounded mb-2" placeholder="Enter your email..."/>
+                        <input type="text" id="url" name ="url" class="input form-control form-control-rounded mb-2" placeholder="Enter your email..."/>
                 </div>
   
               </div>
@@ -56,13 +74,13 @@
               <div class="mb-3">
                 <label class="form-label">Project description</label>
                 <!-- <textarea rows="5" class="form-control" placeholder="Here can be your description">  </textarea> -->
-                <textarea class="form-control" id="description" name ="description" data-bs-toggle="autosize" placeholder="Type something…"></textarea>
+                <textarea class="input form-control" id="description" name ="description" data-bs-toggle="autosize" placeholder="Type something…"></textarea>
   
               </div>
 
               <div class="mb-3">
                 <div class="form-label">Thumbnail</div>
-                <input type="file"id="thumbnail" name ="thumbnail" class="form-control" />
+                <input type="file"id="thumbnail" name ="thumbnail" class="input form-control" />
               </div>
 
 

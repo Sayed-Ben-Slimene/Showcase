@@ -1,6 +1,24 @@
 <script>
     export let form
   </script>
+
+<style>
+
+  .input {
+   color: #000000;
+   border: 2px solid rgba(0, 0, 0, 0.417);
+   border-radius: 10px;
+   background: transparent;
+  
+  
+  }
+  
+  .input:active {
+   box-shadow: 2px 2px 15px #4169e1 inset;
+  }
+  
+  
+  </style>
     <div class="page page-center">
       <div class="container container-tight py-4">
         <div class="text-center mb-3">
@@ -20,7 +38,7 @@
                       <span class="input-icon-addon">
                         <i class="ti ti-user"></i>
                       </span>
-                            <input type="text" class="form-control form-control-rounded mb-2" name="name" placeholder="Enter your Name..."/>
+                            <input type="text" class="input form-control form-control-rounded mb-2" name="name" placeholder="Enter your Name..."/>
                     </div>
 
               <div class="mb-1">
@@ -29,7 +47,7 @@
                   <span class="input-icon-addon">
                     <i class="ti ti-brand-gmail"></i>
                   </span>
-                        <input type="email" name="email" class="form-control form-control-rounded mb-2" placeholder="Enter your email..."/>
+                        <input type="email" name="email" class="input form-control form-control-rounded mb-2" placeholder="Enter your email..."/>
                 </div>
   
               </div>
@@ -40,7 +58,7 @@
                     <span class="input-icon-addon">
                       <i class="ti ti-circle-key"></i>
                     </span>
-                  <input type="password" class="form-control form-control-rounded mb-2" name="password"  placeholder="Enter your Password..."/>
+                  <input type="password" class="input form-control form-control-rounded mb-2" name="password"  placeholder="Enter your Password..."/>
                 </div>
               </div>
               <div class="mb-1">
@@ -50,12 +68,12 @@
                     <span class="input-icon-addon">
                       <i class="ti ti-circle-key"></i>
                     </span>
-                  <input type="password" class="form-control form-control-rounded mb-2" name="passwordConfirm"  placeholder="Confirm your Password..."/>
+                  <input type="password" class="input form-control form-control-rounded mb-2" name="passwordConfirm"  placeholder="Confirm your Password..."/>
                 </div>
               </div>
               <div class="mb-1">
                 <label class="form-check">
-                  <input type="checkbox" class="form-check-input"/>
+                  <input type="checkbox" class="input form-check-input"/>
                   <span class="form-check-label">Agree the <a href="./terms-of-service.html" tabindex="-1">terms and policy</a>.</span>
                 </label>
               </div>

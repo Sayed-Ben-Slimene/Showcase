@@ -6,15 +6,31 @@
 </script>
 
 <style>
+.input {
+ color: #000000;
+ border: 2px solid #83838388;
+ border-radius: 10px;
+ background: transparent;
+
+
+}
+
+.input:active {
+ box-shadow: 2px 2px 15px #4169e1 inset;
+}
+
+
 .page-centerr {
     /* Use Flexbox to center the div */
     display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-    height: 100vh; /* Set the height of the container to the viewport height */
   }
 
 button {
+
+
+
               font-family: inherit;
               font-size: 15px;
               background: royalblue;
@@ -95,14 +111,14 @@ button {
                 <div class="col-sm-6 col-md-6">
                   <div class="mb-3">
                     <label class="form-label">Company</label>
-                    <input type="text" name="company" id="company" class="form-control" placeholder="Company Name ">
+                    <input type="text" name="company" id="company" class="input form-control" placeholder="Company Name ">
                   </div>
                 </div>
 
                 <div class="col-sm-6 col-md-6">
                   <div class="mb-3">
                     <label class="form-label">Email address</label>
-                    <input type="email" name="email" id="email" class="form-control" placeholder="Destination Email">
+                    <input type="email" name="email" id="email" class="input form-control" placeholder="Destination Email">
                   </div>
                 </div>
 
@@ -111,7 +127,7 @@ button {
                   <div class="mb-3">             
                     <label class="form-label">Message</label>
                     <!-- <textarea rows="5" class="form-control" placeholder="Here can be your description">  </textarea> -->
-                    <textarea class="form-control" id="message" name ="message" data-bs-toggle="autosize" placeholder="Type something…"></textarea>
+                    <textarea class="input form-control" id="message" name ="message" data-bs-toggle="autosize" placeholder="Type something…"></textarea>
       
                   </div>
                 </div>
@@ -120,25 +136,25 @@ button {
                 <div class="col-sm-6 col-md-6">
                   <div class="mb-3">
                     <label class="form-label">Address</label>
-                    <input type="text" class="form-control" id="address" name ="address" placeholder="Company Address" >
+                    <input type="text" class="input form-control" id="address" name ="address" placeholder="Company Address" >
                   </div>
                 </div>
                 <div class="col-sm-6 col-md-4">
                   <div class="mb-3">
                     <label class="form-label">City</label>
-                    <input type="text" class="form-control" id="city" name ="city" placeholder="City ">
+                    <input type="text" class="input form-control" id="city" name ="city" placeholder="City ">
                   </div>
                 </div>
                 <div class="col-sm-6 col-md-3">
                   <div class="mb-3">
                     <label class="form-label">Postal Code</label>
-                    <input type="test" id="code" name ="code" class="form-control" placeholder="ZIP Code">
+                    <input type="test" id="code" name ="code" class="input form-control" placeholder="ZIP Code">
                   </div>
                 </div>
                 <div class="col-md-5">
                   <div class="mb-3">
                     <label class="form-label">Country</label>
-                    <select class="form-control form-select" id="country" name ="country" >
+                    <select class="input form-control form-select" id="country" name ="country" >
                       <option id ="country">Germany</option>
                       <option id ="country" >Tunisia</option>
                       <option id ="country">French</option>

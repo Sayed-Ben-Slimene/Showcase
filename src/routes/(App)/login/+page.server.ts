@@ -1,7 +1,6 @@
 import { redirect, fail } from "@sveltejs/kit"
 
 export const actions = {
-  
   login: async ({ locals, request }) => {
     const data = Object.fromEntries(await request.formData()) as {
         email:string;

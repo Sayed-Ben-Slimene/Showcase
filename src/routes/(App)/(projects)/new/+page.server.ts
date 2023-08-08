@@ -1,5 +1,39 @@
 import { error, redirect } from '@sveltejs/kit';
 
+/**
+ * @typedef {import('pocketbase')}
+ */
+
+
+export const load = async ({ locals }) => {
+  try {
+    // Fetch all user data from the server
+    // const users = await fetch("/http://127.0.0.1:8090/users").then((res) => res.json());
+
+
+    const users = await locals.pb.collection("users").getList(1,20,{sort: "-created"})
+
+    console.log("users", users); // Log the actual data received
+
+  //   const users = await pb.collection('users').getFullList({
+  //     sort: '-created',
+  // });
+  
+
+
+    return {
+      users: structuredClone(users.items),
+    };
+  } catch (error) {
+    console.error("Error: ", error);
+    // Handle the error appropriately, for example, redirect to an error page.
+    throw error;
+  }
+};
+
+
+
+
 export const actions = {
   create: async ({ request, locals }) => {
     try {

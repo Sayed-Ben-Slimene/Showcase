@@ -7,7 +7,7 @@ const config = {
 		extend: {}
 	},
 
-	plugins: []
+	plugins: ['@tailwindcss/forms']
 };
 
 module.exports = config;
